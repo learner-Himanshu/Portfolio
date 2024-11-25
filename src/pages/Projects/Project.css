@@ -1,0 +1,77 @@
+.project {
+  margin: 50px;
+  margin-left: 288px;
+}
+.project hr {
+  width: 400px;
+  margin: 10px auto;
+  color: #138781;
+}
+.project h2 {
+  color: #138781;
+}
+.project-card:hover {
+  cursor: pointer;
+  box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+  transition: 1s;
+}
+/* .list-group-flush h5 li:hover {
+  text-align: center;
+  margin-left: 15px;
+  border: none;
+  box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px;
+  transition: 1s;
+  color: white; 
+   background-color: black;
+} */
+.card-body-content .view-button {
+  color: black !important;
+}
+.card-body-content .view-button:hover {
+  color: white !important;
+}
+.card-container .project-card img{
+  height: 300px;
+}
+
+
+/* =================>>>>>>>>>> Dark Theme  */
+
+.dark .project hr {
+    color: #ece9e1;;
+}
+.dark .project h2 {
+  color:  #ece9e1;;
+}
+
+.dark .project-card {
+  background-color: #373737;
+  /* outline: none !important; */
+  /* border: none !important; */
+  color: #ece9e1;
+  /* border: 1px solid #000000; */
+}
+.dark .project-card li {
+  background-color: #373737;
+  outline: none !important;
+  border: none !important;
+  color: #979797;  
+}
+.dark .project-card h5 {
+ border-bottom: 1px solid black; 
+}
+.dark .project-card h5:first-child {
+ border-top: 1px solid black; 
+}
+.dark .project-card li:hover{
+  background-color: black;
+  color: white;
+  transition: 1s;
+}
+.dark .card-body-content .view-button{
+  background-color: #4f4f4f;
+  border: none !important;
+}
+.dark .card-body-content .view-button:hover{
+  background-color: #1f1f1f;
+}

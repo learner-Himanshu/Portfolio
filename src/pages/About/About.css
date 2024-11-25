@@ -1,0 +1,46 @@
+.about {
+  margin: 30px 0;
+  padding: 20px;
+  margin-left: 288px;
+  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+}
+
+.profile-img img {
+  border-radius: 20px;
+  width: 85%;
+  height: 700px;
+}
+.about-content{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.about-content h1{
+    font-family: cursive;
+    text-align: center;
+    border-bottom: 2px solid gray;
+    color: gray;
+}
+.about-content p{
+    text-align: justify;
+    padding: 30px;
+    font-size: 20px;
+}
+ /* ==============>>>>>>     DARK THEME CSS */
+
+
+.dark .about{
+  border-radius: 12px;
+  box-shadow: rgba(0, 0, 0, 0) 0px 60px 40px -7px;
+  margin-right: 0;
+ 
+}
+.dark .about-content h1{
+  color: #aeaeaed3;
+  border-bottom: 2px solid #aeaeaed3;
+}
+.dark .about-content p{
+  color:#d5d4d4d3;  
+}

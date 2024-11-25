@@ -1,0 +1,40 @@
+.work {
+    margin: 50px;
+    margin-left: 288px;
+   border-radius: 10px;
+    background-color: #1387812a;
+  }
+  .work hr {
+    width: 400px;
+    margin: 10px auto;
+    color: #138781;
+  }
+  .work h2 {
+    color: #138781;
+  }
+  .vertical-timeline-element-subtitle p{
+    font-size: 5px;
+  }
+
+  /* =================>>>>>> Dark Theme   */
+
+
+  .dark .work{
+    background-color: #292929; 
+  }
+  .dark .education h2 {
+    color: #9b9b9b;
+    
+  }
+.dark .work .vertical-timeline-element-title {
+  color:#c0c0c0;
+}
+.dark .work .vertical-timeline-element-subtitle {
+  color: #9b9b9b;
+}
+.dark  .work h2 {
+  color: #9b9b9b;
+}
+.dark  .work hr{
+  color: #9b9b9b;
+}

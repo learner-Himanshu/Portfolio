@@ -1,0 +1,45 @@
+.techstack {
+  padding-left: 130px;
+
+}
+.techstack hr {
+  width: 400px;
+  margin: 10px auto;
+  color:  #138781;
+}
+.techstack h2 {
+  color:  #138781;
+}
+.techstack .align-self-center svg {
+  font-size: 35px;
+  margin-right: 20px;
+  margin: 0 10px;
+}
+.techstack .card:hover {
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px,
+    rgba(0, 0, 0, 0.22) 0px 15px 12px;
+  background-color:  #138781;
+  color: #fff;
+  transition: 1s;
+  cursor: pointer;
+}
+
+
+/* ==============>> Dark Theme */
+.dark .techstack h2 {
+  color:  #ece9e1;
+}
+.dark .techstack hr{
+  color:  #ece9e1;
+}
+.dark .techstack .card:hover {
+   background-color:  black;
+  color: #ece9e1;
+  border: 1px solid #ece9e1;
+}
+.dark .techstack-content {
+  background-color: #323232;
+  color:#858585 ;
+  border: none !important;
+  outline: none !important;
+}

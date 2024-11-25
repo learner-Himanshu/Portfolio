@@ -1,0 +1,48 @@
+.education {
+  margin: 50px;
+  margin-left: 288px;
+  border-radius: 10px;
+  padding: 80px 0;
+  background-color: rgba(128, 128, 128, 0.08);
+}
+.education hr {
+  width: 400px;
+  margin: 20px auto;
+  color: #138781;
+  margin-bottom: 50px;
+}
+.education h2 {
+  color: #138781;
+}
+.education .vertical-timeline-element-title {
+  color: #138781;
+}
+.education .vertical-timeline-element-subtitle {
+  color: #1e1e2c;
+}
+
+
+/* ============>>>>>>>    Dark Theme */
+
+
+.dark .education{
+  background-color: #292929;
+  }
+  .dark .education h2 {
+    color: #9b9b9b;
+    
+  }
+.dark .education .vertical-timeline-element-title {
+  color:#c0c0c0;
+  background-color: #292929;
+}
+.dark .education .vertical-timeline-element-subtitle {
+  color: #9b9b9b;
+}
+.dark .education .hr{
+  color:white;
+  height: 2px;
+}
+/* .dark .education .vertical-timeline-element-subtitle p {
+  color: #9b9b9b;
+} */
