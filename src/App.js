@@ -12,6 +12,7 @@ import { useEffect } from 'react'
 import AOS from 'aos'
 import 'aos/dist/aos.css'
 import MobileNav from "./components/MobileNav/MobileNav";
+import { ToastContainer } from 'react-toastify';
 
 
 function App() {
@@ -22,11 +23,12 @@ function App() {
   return (
     <>
       <div className={theme}>
+      <ToastContainer />
         <MobileNav />
         <Layout />
+        <About />
 
         {/* <div className="container"> */}
-        <About />
         <Education />
         {/* </div> */}
         <TechStack />

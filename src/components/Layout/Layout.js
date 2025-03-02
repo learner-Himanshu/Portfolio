@@ -28,7 +28,7 @@ const Layout = () => {
                     </div>
                     <Menu Toggle={Toggle} />
                 </div>
-                <div className="container-fluid">
+                <div className={Toggle ? "container-fluid content-shifted" : "container-fluid"}>
                     <Homepage />
                 </div>
             </div>

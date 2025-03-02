@@ -1,27 +1,37 @@
 .home-container {
   color: white;
-  height: 330px;
-  padding-left: 260px;
+  padding-bottom: 20px;
+  height: auto;
+  min-height: 55vh;
+  width: 100%;
+  margin: 0; /* Remove default margins */
+  padding: 0; /* Remove default padding */
+  position: relative; /* Required for z-index */
+  z-index: 10; /* Ensure Home page is above other sections */
 }
+
 .home-content {
   margin: 15px;
   padding-top: 80px;
 }
+
 .home-content h2 {
-  /* padding-left: 260px; */
   padding: 10px;
+  font-size: 1.5rem;
 }
+
 .home-content h1 {
-  /* padding-left: 260px; */
   padding: 10px;
   color: #f29f67;
-  line-height: 15px;
+  line-height: 1.2;
   margin: 10px 0;
+  font-size: 2rem;
 }
+
 .home-buttons {
-  /* padding-left: 270px; */
   margin-top: 42px;
 }
+
 .home-buttons .btn-hire {
   background-color: #3b8ff3;
   color: white;
@@ -29,6 +39,7 @@
   font-weight: 500;
   font-size: 17px;
 }
+
 .home-buttons .btn-hire:hover {
   width: 170px;
   transition: 1s;
@@ -45,12 +56,13 @@
   font-size: 17px;
   width: 140px;
 }
+
 .home-buttons .btn-cv:hover {
   opacity: 0.8;
   transition: 1s;
 }
 
-.theme-btn {
+.theme-btnn {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -61,24 +73,59 @@
   text-align: center;
   position: fixed;
   cursor: pointer;
-  z-index: 1;
-  
+  z-index: 4000;
   color: white;
-  /* border: 1px solid white; */
   border-top-left-radius: 30px;
   border-bottom-left-radius: 30px;
   right: 0;
   padding: 10px;
 }
 
-
 /* ===================>>>>>>>>>   Mobile view */
 
-@media (max-width:770px){
-  .home-container{
-    margin: 0;
-    padding: 0;
+@media (max-width: 600px) {
+  .home-container {
+    margin-left: 0; /* Remove left margin for mobile screens */
+  }
+
+  .home-content {
+    padding-top: 100px;
+    /* text-align: center; */
+  }
+
+  .home-content h2 {
+    font-size: 1.2rem;
+    padding: 5px;
+  }
+
+  .home-content h1 {
+    font-size: 1.5rem;
+    padding: 5px;
+    line-height: 1.2;
+  }
+
+  .home-buttons {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    width: 75%;
+  }
+
+  .home-buttons .btn-hire,
+  .home-buttons .btn-cv {
     width: 100%;
-    height: 400px;
+    margin-left: 0;
+    font-size: 16px;
+  }
+
+  .home-buttons .btn-hire:hover,
+  .home-buttons .btn-cv:hover {
+    width: 100%;
+  }
+
+  .theme-btnn {
+    display: none;
   }
 }

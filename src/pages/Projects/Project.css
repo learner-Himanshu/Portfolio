@@ -1,6 +1,6 @@
 .project {
   margin: 50px;
-  margin-left: 288px;
+  margin-left: 255px;
 }
 .project hr {
   width: 400px;
@@ -30,18 +30,17 @@
 .card-body-content .view-button:hover {
   color: white !important;
 }
-.card-container .project-card img{
+.card-container .project-card img {
   height: 300px;
 }
-
 
 /* =================>>>>>>>>>> Dark Theme  */
 
 .dark .project hr {
-    color: #ece9e1;;
+  color: #ece9e1;
 }
 .dark .project h2 {
-  color:  #ece9e1;;
+  color: #ece9e1;
 }
 
 .dark .project-card {
@@ -55,23 +54,62 @@
   background-color: #373737;
   outline: none !important;
   border: none !important;
-  color: #979797;  
+  color: #979797;
 }
 .dark .project-card h5 {
- border-bottom: 1px solid black; 
+  border-bottom: 1px solid black;
 }
 .dark .project-card h5:first-child {
- border-top: 1px solid black; 
+  border-top: 1px solid black;
 }
-.dark .project-card li:hover{
+.dark .project-card li:hover {
   background-color: black;
   color: white;
   transition: 1s;
 }
-.dark .card-body-content .view-button{
+.dark .card-body-content .view-button {
   background-color: #4f4f4f;
   border: none !important;
 }
-.dark .card-body-content .view-button:hover{
+.dark .card-body-content .view-button:hover {
   background-color: #1f1f1f;
+}
+
+/* Mobile View */
+@media (max-width: 768px) {
+  .project {
+    margin-left: 0; /* Remove left margin for mobile screens */
+  }
+
+  .card-container {
+    flex-direction: column; /* Stack cards vertically */
+    align-items: center; /* Center cards horizontally */
+  }
+
+  .col-md-3 {
+    width: 90%; /* Make cards 90% width on mobile */
+    margin: 20px 0; /* Add spacing between cards */
+  }
+
+  .project-card {
+    width: 100%; /* Make cards full width of their container */
+  }
+
+  .card-container .project-card img {
+    height: 200px; /* Reduce image height for smaller screens */
+  }
+
+  .card-body-content .view-button {
+    width: 100%; /* Make buttons full width */
+    padding: 10px; /* Adjust button padding */
+    font-size: 16px; /* Adjust button font size */
+  }
+
+  .project-card h3 {
+    font-size: 20px; /* Adjust card title font size */
+  }
+
+  .project-card li {
+    font-size: 14px; /* Adjust list item font size */
+  }
 }

@@ -1,17 +1,28 @@
-.sidebar-section{
+.sidebar-section {
   display: flex;
   margin: 0px;
   padding: 0px;
+  min-height: 50vh;
   background-color: black;
 }
+
+.container-fluid {
+  flex: 1;
+}
+
 .sidebar {
   height: 100vh;
   background-color: #1e1e2c;
   width: 120px;
   position: fixed;
 }
+
 .sidebar-toggler {
   width: 260px;
+}
+
+.content-shifted {
+  margin-left: 288px;
 }
 
 .sidebar-toggle-icon {
@@ -27,19 +38,36 @@
   margin-top: 30px;
 }
 
+/* ============>>> Mobile view */
 
-/* ============>>> MObile view */
-
-
-@media (max-width:770px){
-  .sidebar{
-    display: none;
+@media (max-width: 768px) {
+  .sidebar-section {
+    position: relative; /* Adjust positioning for mobile */
+    min-height: auto; /* Allow height to adjust based on content */
+    flex-direction: column; /* Stack sidebar and content vertically */
   }
-}
 
-@media (max-width:768px){
-  .sidebar-section{
-   height: 1024px;
-   position: fixed;
+  .sidebar {
+    display: none; /* Hide sidebar by default on mobile */
+  }
+
+  .sidebar-toggler {
+    width: 100%; /* Make sidebar full width when toggled */
+    position: relative; /* Adjust positioning for mobile */
+    height: auto; /* Allow height to adjust based on content */
+  }
+
+  .content-shifted {
+    margin-left: 0; /* Remove margin for mobile screens */
+  }
+
+  .sidebar-toggle-icon {
+    display: flex;
+    justify-content: center; /* Center the toggle icon */
+    margin-top: 10px; /* Adjust margin for better spacing */
+  }
+
+  .sidebar-toggle-icon p svg {
+    margin-top: 0; /* Remove top margin for better alignment */
   }
 }

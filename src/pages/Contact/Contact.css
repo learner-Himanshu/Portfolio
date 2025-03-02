@@ -4,53 +4,58 @@
   margin-top: 70px;
   padding: 80px 0;
 }
+
 .card0 {
   box-shadow: rgba(0, 0, 0, 0.09) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px,
     rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px,
     rgba(0, 0, 0, 0.09) 0px 32px 16px;
   border-radius: 10px;
 }
+
 .card1 {
   display: flex;
   align-items: center;
   height: 100%;
   border-radius: 10px;
 }
+
 .contact .card1 .image {
   height: 100%;
   width: 100%;
-  border-radius:40px;
-
-  /* margin-top: 30px;
-  padding: 30px; */
+  border-radius: 40px;
 }
+
 .card2 {
   margin: 0px 50px;
 }
+
 .border-line {
   border-right: 2px solid #e0e0e0;
 }
+
 .line {
   height: 1px;
   width: 43%;
   background-color: #e0e0e0;
   margin-top: 10px;
 }
+
 .or {
   display: flex;
   width: 14%;
   font-weight: bold;
   margin: 0;
-  padding-left: 35px;
-  /* margin-left: 5px; */
+  padding-left: 18px;
+  padding-right: 18px;
 }
+
 ::placeholder {
   color: #bdbdbd;
   opacity: 1;
   font-weight: 300;
 }
-input,
-textarea {
+
+input {
   padding: 10px 12px;
   border: 1px solid lightgray;
   margin-top: 6px;
@@ -58,51 +63,67 @@ textarea {
   width: 100%;
   font-size: 19px;
   letter-spacing: 1px;
-  /* border: none; */
-  /* border-bottom: 1px solid black; */
   border-radius: 5px;
 }
-.card2 input:focus,
-textarea:focus {
+textarea {
+  padding: 10px 12px;
+  border: 1px solid lightgray;
+  margin-top: 6px;
+  color: #138781 !important;
+  width: 100%;
+  font-size: 19px;
+  letter-spacing: 1px;
+  border-radius: 5px;
+}
+.card2 textarea:focus {
   box-shadow: none !important;
   border: none;
   outline: 1px solid #138781 !important;
   outline-width: 0px;
 }
+
+.card2 input:focus {
+  box-shadow: none !important;
+  border: none;
+  outline: 1px solid #138781 !important;
+  outline-width: 0px;
+}
+
 .btn:focus {
   box-shadow: none;
   outline-width: 0px;
 }
+
 .btn {
   background-color: #1e1e1e;
   color: #949494;
   margin-bottom: 15px;
   padding: 10px;
 }
+
 .btn:hover {
   color: white;
   background-color: black;
 }
 
-
-
-
 /* ============>>>>>>  Dark theme */
 
-
-.dark .card0{
- background-color: #292929;
-}
-.dark .card2{
- background-color: #424242;
+.dark .card0 {
+  background-color: #292929;
 }
 
-.dark input{
+.dark .card2 {
   background-color: #424242;
 }
-.dark textarea{
-  background-color: #424242; 
+
+.dark input {
+  background-color: #424242;
 }
+
+.dark textarea {
+  background-color: #424242;
+}
+
 .dark input:focus,
 textarea:focus {
   box-shadow: none !important;
@@ -112,18 +133,77 @@ textarea:focus {
   color: white;
 }
 
-.dark .or{
-
+.dark .or {
   color: #c4c4c4;
 }
 
-.dark .card2{
+.dark .card2 {
   color: white;
 }
+
 .dark .card2 h3 svg {
   color: white;
-  /* font-size: 50px; */
-  /* background-color: white; */
-  color: white !important;
-  
+}
+
+/* =================>>>>>> Mobile View   */
+
+@media (max-width: 768px) {
+  .contact {
+    margin-left: 0; /* Remove left margin for mobile screens */
+    margin: 20px; /* Reduce overall margin */
+    padding: 20px 0; /* Adjust padding for better spacing */
+  }
+
+  .card0 {
+    box-shadow: none; /* Remove shadow for a cleaner look on mobile */
+  }
+
+  .card1 {
+    display: none; /* Hide the image on mobile screens */
+  }
+
+  .card2 {
+    margin: 0; /* Remove margin for better spacing */
+    padding: 20px; /* Add padding for better readability */
+  }
+
+  .border-line {
+    border-right: none; /* Remove border line on mobile */
+  }
+
+  .line {
+    width: 40%; /* Adjust line width for better spacing */
+  }
+
+  .or {
+    width: 20%; /* Adjust OR text width for better spacing */
+    padding-left: 0; /* Remove padding for better alignment */
+  }
+
+  input,
+  textarea {
+    font-size: 16px; /* Adjust font size for better readability */
+  }
+
+  .btn {
+    width: 100%; /* Make button full width */
+  }
+
+  .icons {
+    display: flex;
+    justify-content: center; /* Center icons horizontally */
+    gap: 10px; /* Add spacing between icons */
+    flex-wrap: wrap; /* Allow icons to wrap to the next line if needed */
+  }
+
+  .icons svg {
+    margin: 0; /* Remove margin for better alignment */
+    font-size: 30px; /* Adjust icon size for better visibility */
+  }
+
+  .icons h3 {
+    width: 100%; /* Ensure the text takes full width */
+    text-align: center; /* Center the text */
+    margin-bottom: 10px; /* Add spacing below the text */
+  }
 }

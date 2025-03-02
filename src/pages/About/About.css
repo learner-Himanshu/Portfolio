@@ -1,8 +1,9 @@
 .about {
   margin: 30px 0;
   padding: 20px;
-  margin-left: 288px;
   box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+  margin-left: 288px;
+  margin-top: 20px;
 }
 
 .profile-img img {
@@ -10,37 +11,40 @@
   width: 85%;
   height: 700px;
 }
-.about-content{
+.about-content {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
 
-.about-content h1{
-    font-family: cursive;
-    text-align: center;
-    border-bottom: 2px solid gray;
-    color: gray;
+.about-content h1 {
+  font-family: cursive;
+  text-align: center;
+  border-bottom: 2px solid gray;
+  color: gray;
 }
-.about-content p{
-    text-align: justify;
-    padding: 30px;
-    font-size: 20px;
+.about-content p {
+  text-align: justify;
+  padding: 30px;
+  font-size: 20px;
 }
- /* ==============>>>>>>     DARK THEME CSS */
+/* ==============>>>>>>     DARK THEME CSS */
 
-
-.dark .about{
+.dark .about {
   border-radius: 12px;
   box-shadow: rgba(0, 0, 0, 0) 0px 60px 40px -7px;
-  margin-right: 0;
- 
 }
-.dark .about-content h1{
+.dark .about-content h1 {
   color: #aeaeaed3;
   border-bottom: 2px solid #aeaeaed3;
 }
-.dark .about-content p{
-  color:#d5d4d4d3;  
+.dark .about-content p {
+  color: #d5d4d4d3;
+}
+
+@media (max-width: 768px) {
+  .about {
+    margin-left: 0;
+  }
 }

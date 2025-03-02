@@ -1,48 +1,92 @@
 .education {
   margin: 50px;
-  margin-left: 288px;
   border-radius: 10px;
   padding: 80px 0;
   background-color: rgba(128, 128, 128, 0.08);
+  margin-left: 288px;
 }
+
 .education hr {
   width: 400px;
   margin: 20px auto;
   color: #138781;
   margin-bottom: 50px;
 }
+
 .education h2 {
   color: #138781;
 }
+
 .education .vertical-timeline-element-title {
   color: #138781;
 }
+
 .education .vertical-timeline-element-subtitle {
   color: #1e1e2c;
 }
 
-
 /* ============>>>>>>>    Dark Theme */
 
-
-.dark .education{
-  background-color: #292929;
-  }
-  .dark .education h2 {
-    color: #9b9b9b;
-    
-  }
-.dark .education .vertical-timeline-element-title {
-  color:#c0c0c0;
+.dark .education {
   background-color: #292929;
 }
+
+.dark .education h2 {
+  color: #9b9b9b;
+}
+
+.dark .education .vertical-timeline-element-title {
+  color: #c0c0c0;
+  background-color: #292929;
+}
+
 .dark .education .vertical-timeline-element-subtitle {
   color: #9b9b9b;
 }
-.dark .education .hr{
-  color:white;
+
+.dark .education .hr {
+  color: white;
   height: 2px;
 }
-/* .dark .education .vertical-timeline-element-subtitle p {
-  color: #9b9b9b;
-} */
+
+/* =================>>>>>> Mobile View   */
+
+@media (max-width: 768px) {
+  .education {
+    margin-left: 0; /* Remove left margin for mobile screens */
+    margin: 20px; /* Reduce overall margin */
+    padding: 20px 0; /* Adjust padding for better spacing */
+  }
+
+  .education hr {
+    width: 80%; /* Make HR line responsive */
+    margin-bottom: 30px; /* Adjust margin for better spacing */
+  }
+
+  .vertical-timeline-element {
+    margin: 0 10px; /* Add margin to timeline elements */
+  }
+
+  .vertical-timeline-element-content {
+    padding: 10px; /* Add padding to content for better readability */
+  }
+
+  .vertical-timeline-element-title {
+    font-size: 18px; /* Adjust title font size for mobile */
+  }
+
+  .vertical-timeline-element-subtitle {
+    font-size: 16px; /* Adjust subtitle font size for mobile */
+  }
+
+  .vertical-timeline-element p {
+    font-size: 14px; /* Adjust paragraph font size for mobile */
+  }
+
+  .vertical-timeline-element-icon {
+    width: 30px; /* Adjust icon size */
+    height: 30px;
+    left: 50%; /* Center the icon */
+    transform: translateX(-50%);
+  }
+}

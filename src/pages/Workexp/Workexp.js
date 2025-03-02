@@ -19,7 +19,7 @@ const Workexp = () => {
           </div>
           <VerticalTimeline lineColor='#1e1e2c'>
             <VerticalTimelineElement
-              className="vertical-timeline-element--work"
+              className="vertical-timeline-element--work my-5"
               contentStyle={theme ==='light' ? ({ background: 'white', color: 'black' }) : ({ background: '#1d1d1d', color: '#ece9e1' } )}
               contentArrowStyle={{ borderRight: '15px solid  white' }}
               date="Nov - 2023 -  Feb- - 2024"
@@ -34,7 +34,7 @@ const Workexp = () => {
               </p>
             </VerticalTimelineElement>
             <VerticalTimelineElement
-              className="vertical-timeline-element--work"
+              className="vertical-timeline-element--work my-5"
               contentStyle={theme ==='light' ? ({ background: 'white', color: 'black' }) : ({ background: '#1d1d1d', color: '#ece9e1' } )}
               contentArrowStyle={{ borderRight: '10px solid  white' }}
               date="Jan - 2023 - Nov - 2023"

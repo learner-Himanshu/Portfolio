@@ -1,40 +1,87 @@
 .work {
-    margin: 50px;
-    margin-left: 288px;
-   border-radius: 10px;
-    background-color: #1387812a;
-  }
-  .work hr {
-    width: 400px;
-    margin: 10px auto;
-    color: #138781;
-  }
-  .work h2 {
-    color: #138781;
-  }
-  .vertical-timeline-element-subtitle p{
-    font-size: 5px;
-  }
-
-  /* =================>>>>>> Dark Theme   */
-
-
-  .dark .work{
-    background-color: #292929; 
-  }
-  .dark .education h2 {
-    color: #9b9b9b;
-    
-  }
-.dark .work .vertical-timeline-element-title {
-  color:#c0c0c0;
+  margin: 50px;
+  border-radius: 10px;
+  background-color: #1387812a;
+  margin-left: 288px;
 }
+
+.work hr {
+  width: 400px;
+  margin: 10px auto;
+  color: #138781;
+}
+
+.work h2 {
+  color: #138781;
+}
+
+.vertical-timeline-element-subtitle p {
+  font-size: 5px;
+}
+
+/* =================>>>>>> Dark Theme   */
+
+.dark .work {
+  background-color: #292929;
+}
+
+.dark .education h2 {
+  color: #9b9b9b;
+}
+
+.dark .work .vertical-timeline-element-title {
+  color: #c0c0c0;
+}
+
 .dark .work .vertical-timeline-element-subtitle {
   color: #9b9b9b;
 }
-.dark  .work h2 {
+
+.dark .work h2 {
   color: #9b9b9b;
 }
-.dark  .work hr{
+
+.dark .work hr {
   color: #9b9b9b;
+}
+
+/* =================>>>>>> Mobile View   */
+
+@media (max-width: 768px) {
+  .work {
+    margin-left: 0; /* Remove left margin for mobile screens */
+    margin: 20px; /* Reduce overall margin */
+    padding: 10px; /* Add padding for better spacing */
+  }
+
+  .work hr {
+    width: 80%; /* Make HR line responsive */
+  }
+
+  .vertical-timeline-element {
+    margin: 0 10px; /* Add margin to timeline elements */
+  }
+
+  .vertical-timeline-element-content {
+    padding: 10px; /* Add padding to content for better readability */
+  }
+
+  .vertical-timeline-element-title {
+    font-size: 18px; /* Adjust title font size for mobile */
+  }
+
+  .vertical-timeline-element-subtitle {
+    font-size: 16px; /* Adjust subtitle font size for mobile */
+  }
+
+  .vertical-timeline-element p {
+    font-size: 14px; /* Adjust paragraph font size for mobile */
+  }
+
+  .vertical-timeline-element-icon {
+    width: 30px; /* Adjust icon size */
+    height: 30px;
+    left: 50%; /* Center the icon */
+    transform: translateX(-50%);
+  }
 }

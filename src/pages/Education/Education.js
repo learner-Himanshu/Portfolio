@@ -20,7 +20,7 @@ const Education = () => {
         </div>
         <VerticalTimeline>
           <VerticalTimelineElement
-            className="vertical-timeline-element--work"
+            className="vertical-timeline-element--work my-5"
             contentStyle={ theme ==='light' ? ({ background: 'white', color: 'black' ,border:'none'}) : ({ background: '#1d1d1d', color: '#ece9e1' } )}
             contentArrowStyle={theme === 'light'? { borderRight: '10px solid  gray' } : {borderRight:'10 px solid #ece9e1'}}
             date="2023 - 2026"
@@ -34,7 +34,7 @@ const Education = () => {
             </p>
           </VerticalTimelineElement>
           <VerticalTimelineElement
-            className="vertical-timeline-element--work"
+            className="vertical-timeline-element--work my-5"
             contentStyle={theme ==='light' ? ({ background: 'white', color: 'black' }) : ({ background: '#1d1d1d', color: '#ece9e1' } )}
             contentArrowStyle={{ borderRight: '10px solid  gray' }}
             date="2021 - 2023"
